@@ -1,0 +1,333 @@
+
+/* =================================
+   4CHAN-INSPIRED MIL ARCHIVE
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffee;
+    color: #800000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    padding: 18px 10px 12px;
+}
+
+.logo img {
+    width: 220px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.subtitle {
+    color: #800000;
+    font-size: 13px;
+    margin: 5px 0 12px;
+}
+
+.navigation {
+    font-size: 13px;
+}
+
+.navigation a {
+    color: #34345c;
+    text-decoration: underline;
+}
+
+.navigation span {
+    color: #800000;
+    margin: 0 5px;
+}
+
+/* ADVERTISEMENTS */
+
+.ad-label {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+/* TOP ADVERTISEMENT */
+.top-ad {
+    width: 1063px;
+    max-width: 95%;
+    margin: 12px auto 20px;
+    text-align: center;
+}
+
+.top-ad img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: none;
+    background: transparent;
+}
+
+.ad-link {
+    display: block;
+}
+
+.page-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.side-ad {
+    width: 150px;
+    flex: 0 0 150px;
+    text-align: center;
+}
+
+.side-ad img {
+    display: block;
+    width: 150px;
+    height: 300px;
+    object-fit: contain;
+    background: #f0e0d6;
+    border: 1px solid #d9bfb7;
+}
+
+.main-content {
+    width: 850px;
+    max-width: 100%;
+    min-width: 0;
+}
+
+/* SECTION HEADINGS */
+
+.board-title {
+    text-align: center;
+    color: #af0a0f;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #d9bfb7;
+    padding-bottom: 8px;
+    margin: 20px 0 15px;
+}
+
+/* POSTS */
+
+.post {
+    background: #f0e0d6;
+    border: 1px solid #d9bfb7;
+    padding: 10px;
+    margin: 10px auto 18px;
+    overflow-wrap: break-word;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.post-subject {
+    color: #cc1105;
+    font-weight: bold;
+}
+
+.post-date,
+.post-number {
+    color: #707070;
+    font-size: 11px;
+}
+
+.post p {
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+.post h3 {
+    font-size: 15px;
+    margin: 8px 0;
+    color: #800000;
+}
+
+/* PROFILE */
+
+.profile-post {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #b7a49c;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.profile-details p {
+    margin: 6px 0;
+}
+
+.name {
+    color: #117743;
+    font-weight: bold;
+}
+
+.field {
+    color: #800000;
+    font-weight: bold;
+}
+
+/* CATALOG */
+
+.catalog-intro {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#searchInput {
+    width: 280px;
+    max-width: 90%;
+    padding: 7px;
+    border: 1px solid #aaa;
+    background: #fff;
+    font-size: 13px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: #34345c;
+}
+
+.activity-list {
+    width: 100%;
+}
+
+.activity a {
+    color: #34345c;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.activity a:hover,
+.navigation a:hover {
+    color: #d00;
+}
+
+#noResults {
+    text-align: center;
+    padding: 20px;
+    color: #800000;
+}
+
+/* REFLECTION */
+
+#reflection .post {
+    min-height: 130px;
+}
+
+/* LINKS */
+
+a {
+    color: #34345c;
+}
+
+a:visited {
+    color: #34345c;
+}
+
+a:hover {
+    color: #d00;
+}
+
+/* BOTTOM */
+
+.back-top {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.bottom-ad {
+    width: 728px;
+    max-width: 95%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid #d9bfb7;
+    margin-top: 25px;
+    padding: 15px 10px;
+    font-size: 11px;
+    color: #800000;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+    .side-ad {
+        display: none;
+    }
+
+    .main-content {
+        width: 850px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .board-title {
+        font-size: 17px;
+    }
+
+    .profile-post {
+        flex-direction: column;
+    }
+
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .post {
+        padding: 8px;
+    }
+
+    .top-ad img,
+    .bottom-ad img {
+        height: 70px;
+    }
+}
